@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Hogwarts Hub</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #111; 
+            color: #fff; 
+            text-align: center; 
+            margin: 0;
+            padding: 0;
+        }
+        h1 { margin: 20px 0; }
+        .section { display: flex; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+        .card {
+            background: #222;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 100%; border-radius: 5px; }
+        .card h3 { margin: 10px 0 5px 0; }
+        .card p { margin: 5px 0; font-size: 14px; text-align: left; }
+        .card button { 
+            padding: 10px 20px; 
+            margin-top: 10px; 
+            border: none; 
+            background: #4caf50; 
+            color: white; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        @media (max-width: 768px) {
+            .section { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hogwarts Hub</h1>
+
+<div class="section">
+    <div class="card">
+        <img src="https://citaty.info/files/portraits/garri-potter.jpg" alt="Harry Potter">
+        <h3>Гарри Поттер</h3>
+        <p>Известный как “Мальчик-который-выжил”, ученик Гриффиндора. Храбрый, умный и готовый сражаться со злом.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="https://preview.redd.it/which-perfume-hermione-granger-would-wear-v0-yb8fvexkh8jf1.jpg?width=640&crop=smart&auto=webp&s=412e450e3791d92959457ff1a32880cfcdce79d2" alt="Hermione Granger">
+        <h3>Гермиона Грейнджер</h3>
+        <p>Самая умная ученица своего поколения. Лояльная, решительная и всегда на стороне Гарри.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="https://img.kupigolos.ru/hero/5d3762201e8b7.jpg?p=bh&s=cd5feb5353318494e4ed5a62f2696c26" alt="Ron Weasley">
+        <h3>Рон Уизли</h3>
+        <p>Лучший друг Гарри, из семьи рыжих волшебников. Верный, смелый и иногда немного трусливый.</p>
+        <button>Подробнее</button>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fe/Hogwarts_School_of_Witchcraft_and_Wizardry.jpg/330px-Hogwarts_School_of_Witchcraft_and_Wizardry.jpg" alt="Hogwarts">
+        <h3>Хогвартс</h3>
+        <p>Великий замок и школа волшебства. Дом для всех учеников, где магия оживает и начинаются приключения.</p>
+        <button>Советы</button>
+    </div>
+</div>
+
+</body>
+</html>
